@@ -4,7 +4,6 @@ from predict import run_RF
 import unittest
 
 class TestStringMethods(unittest.TestCase):
-    # local testing
     def test_visualization(self):
         self.assertEqual(final_result('data','data'),"/data/allinfo_XGBoost_info.csv")
         self.assertEqual(run_RF('data','data'),"/data/submission_RF.csv")
