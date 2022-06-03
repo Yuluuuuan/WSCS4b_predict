@@ -6,7 +6,8 @@ import unittest
 
 class TestStringMethods(unittest.TestCase):
     def test_visualization(self):
-        self.assertEqual(final_result('data', 'data'), "/data/allinfo_XGBoost_info.csv")
+        self.assertEqual(final_result('data', 'data'),
+                         "/data/allinfo_XGBoost_info.csv")
         self.assertEqual(run_RF('data', 'data'), "/data/submission_RF.csv")
         self.assertEqual(run_LR('data', 'data'), "/data/submission_LR.csv")
 
